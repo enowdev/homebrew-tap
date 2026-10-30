@@ -5,21 +5,21 @@
 class EnowxRag < Formula
   desc "Per-project RAG memory MCP server for AI coding agents"
   homepage "https://github.com/enowdev/enowx-rag"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enowdev/enowx-rag/releases/download/v0.1.0/enowx-rag_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1d4d9741245585e02e25c59a456637871caff9cf3b7a1302e4668903eda3f35b"
+      url "https://github.com/enowdev/enowx-rag/releases/download/v0.2.0/enowx-rag_0.2.0_darwin_amd64.tar.gz"
+      sha256 "df7af1f0e493fb7472220836165de1e55211ca3465dc9bbfe93dd100ccc46e11"
 
       define_method(:install) do
         bin.install "enowx-rag"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/enowdev/enowx-rag/releases/download/v0.1.0/enowx-rag_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b026e1345e15461f98d3791d9ab51848784ee0ea1e1429b8095aa13a4120a06c"
+      url "https://github.com/enowdev/enowx-rag/releases/download/v0.2.0/enowx-rag_0.2.0_darwin_arm64.tar.gz"
+      sha256 "56436a8d0301916d8cb88a3a6aea6bdbf8ccee2705044d7660b3cc024fb9489e"
 
       define_method(:install) do
         bin.install "enowx-rag"
@@ -29,15 +29,15 @@ class EnowxRag < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enowdev/enowx-rag/releases/download/v0.1.0/enowx-rag_0.1.0_linux_amd64.tar.gz"
-      sha256 "f3aa7a4b52c61b3169ab320502dced36946a68d6e247097f42ea9080fe997613"
+      url "https://github.com/enowdev/enowx-rag/releases/download/v0.2.0/enowx-rag_0.2.0_linux_amd64.tar.gz"
+      sha256 "21650af0aeda8b90032c753e34d577f069c7bf50f5a88f2df1fb3762201fe094"
       define_method(:install) do
         bin.install "enowx-rag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enowdev/enowx-rag/releases/download/v0.1.0/enowx-rag_0.1.0_linux_arm64.tar.gz"
-      sha256 "9176f5e2bb1f59e07959cf6758ce52aac40317a57a3cc22f3bb7c0da9f1e8d4c"
+      url "https://github.com/enowdev/enowx-rag/releases/download/v0.2.0/enowx-rag_0.2.0_linux_arm64.tar.gz"
+      sha256 "de4ffab03cda166daae29a9b8cd68593d4736316f846dd1b19904800d42af10b"
       define_method(:install) do
         bin.install "enowx-rag"
       end
